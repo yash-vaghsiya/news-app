@@ -30,7 +30,7 @@ ReactDOM.createRoot(
 ).render(
   <React.StrictMode>
     <NewsProvider>
-        <HashRouter>
+        <HashRouter basename="/news-app/">
           <App />
         </HashRouter>
     </NewsProvider>
