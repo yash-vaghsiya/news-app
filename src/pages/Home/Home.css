@@ -1,0 +1,37 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.news-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-items: center;
+
+  gap: 25px;
+
+  padding: 40px;
+}
+
+.no-news {
+  text-align: center;
+  font-size: 28px;
+  color: #374151;
+  margin-top: 50px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .news-container {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .no-news {
+    font-size: 22px;
+  }
+}

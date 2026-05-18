@@ -1,0 +1,113 @@
+.notfound-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #1e3a8a,
+    #2563eb,
+    #3b82f6
+  );
+
+  padding: 20px;
+}
+
+.notfound-content {
+  background: white;
+
+  padding: 50px 40px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  max-width: 500px;
+  width: 100%;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  animation: fadeIn 0.5s ease;
+}
+
+.notfound-content h1 {
+  font-size: 120px;
+  color: #2563eb;
+  line-height: 1;
+}
+
+.notfound-content h2 {
+  font-size: 32px;
+  color: #111827;
+  margin-top: 10px;
+}
+
+.notfound-content p {
+  margin-top: 15px;
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.notfound-content button {
+  margin-top: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.notfound-content button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .notfound-content {
+    padding: 40px 25px;
+  }
+
+  .notfound-content h1 {
+    font-size: 90px;
+  }
+
+  .notfound-content h2 {
+    font-size: 26px;
+  }
+
+  .notfound-content p {
+    font-size: 15px;
+  }
+}
