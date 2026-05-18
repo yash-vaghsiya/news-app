@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -12,24 +11,22 @@ import NotFound from "../pages/NotFound/NotFound";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Home Page */}
-        <Route path="/" element={<Home />} />
+    <Routes>
+      {/* Home Page */}
+      <Route path="/" element={<Home />} />
 
-        {/* Details Page */}
-        <Route
-          path="/details"
-          element={<Details />}
-        />
+      {/* Details Page */}
+      <Route
+        path="/details"
+        element={<Details />}
+      />
 
-        {/* 404 Page */}
-        <Route
-          path="*"
-          element={<NotFound />}
-        />
-      </Routes>
-    </BrowserRouter>
+      {/* 404 Page */}
+      <Route
+        path="*"
+        element={<NotFound />}
+      />
+    </Routes>
   );
 };
 
