@@ -24,13 +24,15 @@ import "./assets/styles/global.css";
 
 // Context Provider
 import { NewsProvider } from "./context/NewsContext";
-
+import { HashRouter } from 'react-router-dom'
 ReactDOM.createRoot(
   document.getElementById("root")
 ).render(
   <React.StrictMode>
     <NewsProvider>
-      <App />
+        <HashRouter>
+          <App />
+        </HashRouter>
     </NewsProvider>
   </React.StrictMode>
 );
