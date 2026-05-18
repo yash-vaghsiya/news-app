@@ -28,11 +28,11 @@ import { HashRouter } from 'react-router-dom'
 ReactDOM.createRoot(
   document.getElementById("root")
 ).render(
-  <React.StrictMode>
-    <NewsProvider>
+  // <React.StrictMode>
+  //   <NewsProvider>
         <HashRouter basename="/news-app/">
           <App />
         </HashRouter>
-    </NewsProvider>
-  </React.StrictMode>
+  //   </NewsProvider>
+  // </React.StrictMode>
 );
